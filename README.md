@@ -2,7 +2,7 @@
 
 Literally an auto-updating \<iframe> only that gets input from a \<textarea>, there's not even an autosyntax and autocomplete feature. Why would you even use this? I mean the only neat thing in this is that it's lightweight, fully clientside only, and works in IE >=9
 
-Current version: 0.2
+Current version: 0.3
 
 See it live: <https://xyr11.github.io/simple-html-previewer/>
 

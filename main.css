@@ -51,6 +51,29 @@ body {
   margin: 0;
 }
 
+header {
+  padding: 2em 24px 1.5em 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  font-size: 14px;
+}
+header h1 {
+  display: inline-block;
+  font-size: 2.2em;
+  margin: 0;
+  line-height: 36px;
+  padding: 12px 2px 0 6px;
+}
+header > * {
+  padding: 0;
+  margin: 4px 8px;
+}
+nav {
+  flex-grow: 10;
+  display: inline-block;
+}
+
 h1, h2, h3 {
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -99,27 +122,6 @@ pre {
 
 hr {
   margin: 1.5em 0 1em 0;
-}
-
-/* header */
-header {
-  padding: 2em 24px 1.5em 12px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  font-size: 14px;
-}
-header h1 {
-  display: inline-block;
-  font-size: 2.2em;
-  margin: 8px 0 0 0;
-  line-height: 36px;
-  padding: 2px 2px 0 6px;
-}
-nav {
-  flex-grow: 10;
-  display: inline-block;
-  padding: 2px 8px;
 }
 
 /* theme */
