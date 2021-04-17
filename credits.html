@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>
+<html class="ie" lang="en">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" id="body">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple HTML Previewer</title>
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="main.css" rel="stylesheet">
+  <style>
+    main {
+      display: block;
+      margin: 0 1em;
+    }
+    .light * {
+      --body-bg: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header">
+    <h1>Simple HTML Previewer</h1>
+    <nav>
+      <span id="blurb"></span> •
+      <a href="index.html">Home</a> •
+      <a href="about.html">About</a> •
+      <a href="https://github.com/xyr11/simple-html-previewer">GitHub</a>
+    </nav>
+    <!--[if !IE]><!-->
+    <label id="theme-wrap" class="switch" title="Toggle theme">
+      <input type="checkbox" id="theme" onclick="toggle()" checked>
+      <span class="slider"><i id="slider-inside"></i></span>
+    </label>
+    <!--<![endif]-->
+  </header>
+  <noscript style="
+    position: absolute;
+    display: block;
+    top: 15%;
+    left: 0; right: 0;
+    padding: 35px;
+    width: 80%;
+    max-width: 480px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    z-index: 5;
+    color: white;
+    background-color: #121212;
+    border: 4px solid yellow;
+    font-size: 18px;
+    box-shadow: 0 1px 16px black;
+    overflow: hidden;
+    overflow-y: auto;
+  ">
+    <h2 style="margin: 10px 0 25px 0;">⚠️ Enable Javascript ⚠️</h2>
+    <p>If you see this message, it means that your browser currently doesn't allow Javascript code. If you can, please enable it for this page to work, or switch to a Javascript-capable browser. </p>
+  </noscript>
+  <main>
+    <div>
+      <h2>Credits & Licenses</h2>
+      <p>Credits to all the owners of these projects that made this site more useful and compatible!</p>
+      <h3><a href="https://github.com/eligrey/classList.js"> eligrey/classList.js</a></h3>
+      <p class="subt">Cross-browser element.classList</p>
+      <pre>This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
+
+In jurisdictions that recognize copyright laws, the author or authors of this software dedicate any and all copyright interest in the software to the public domain. We make this dedication for the benefit of the public at large and to the detriment of our heirs and successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to http://unlicense.org/</pre>
+      <hr>
+      <h3><a href="https://github.com/jhildenbiddle/css-vars-ponyfill"> jhildenbiddle/css-vars-ponyfill</a></h3>
+      <p class="subt">Client-side support for CSS custom properties (aka "CSS variables") in legacy and modern browsers</p>
+      <pre>MIT License
+
+Copyright (c) 2018 John Hildenbiddle
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+      <hr>
+      <h3><a href="https://github.com/paulirish/matchMedia.js"> paulirish/matchMedia.js</a></h3>
+      <p class="subt">matchMedia polyfill for testing media queries in JS </p>
+      <pre>Copyright (c) 2012 Scott Jehl
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</pre>
+      <hr>
+      <h3><a href="https://github.com/zebzhao/indent.js">zebzhao/indent.js</a></h3>
+      <p class="subt">Pure code indentation for jsx, tsx, ts, js, html, css, less, scss.</p>
+      <pre>The MIT License (MIT)
+=====================
+
+Copyright © 2018 Zeb Zhao
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the “Software”), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.</pre>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/gh/xyr11/simple-html-previewer@latest/version.js" type="text/javascript"></script>
+  <script src="js/indenter.js" type="text/javascript"></script>
+  <script src="js/cssVarsPolyfill.js" type="text/javascript"></script>
+  <script src="js/classListPolyfill.js" type="text/javascript"></script>
+  <script src="js/matchMediaPolyfill.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
