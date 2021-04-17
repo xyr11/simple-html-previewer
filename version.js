@@ -1,1 +1,1 @@
-var version = "0.1" // this is the latest version for all script to check to!
+var version = "0.2" // this is the latest version for all script to check to!
