@@ -94,7 +94,7 @@
   <header id="header">
     <h1>Simple HTML Previewer</h1>
     <nav>
-      <span id="blurb"></span> • <a href="about.html">About</a> • <a href="credits.html">Credits</a> • <a href="https://github.com/xyr11/simple-html-previewer">GitHub</a>
+      <span id="blurb"></span><a href="about.html">About</a> • <a href="licenses.html">Licenses</a> • <a href="https://github.com/xyr11/simple-html-previewer">GitHub</a>
     </nav>
     <button id="indent" title="Add indentation to your code" onclick="iNdent()">🔧 Indent</button>
     <button id="orient" title="Toggle orientation">🔁 Vertical</button>
@@ -239,7 +239,7 @@
     }
 
     // Prompt before leaving
-    if (window.matchMedia('(-ms-high-contrast: active), (-ms-high-contrast: none)').matches) window.addEventListener('beforeunload', function(e) { if (cont.value)e.preventDefault(); e.returnValue = '' })
+    if (window.matchMedia('(-ms-high-contrast: active), (-ms-high-contrast: none)').matches) window.addEventListener('beforeunload', function(e) { if (cont.value) { e.preventDefault(); e.returnValue = '' } })
 
     update(); resize()
   </script>

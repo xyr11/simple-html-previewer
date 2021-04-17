@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
   font-family: 'Roboto';
-  src: url('fonts/Roboto-Light.ttf');
+  src: url('fonts/RobotoLight.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 header {
-  padding: 2em 24px 1.5em 12px;
+  padding: 2.2em 24px 1.5em 12px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -67,10 +67,11 @@ header h1 {
 }
 header > * {
   padding: 0;
-  margin: 4px 8px;
+  margin: 8px;
 }
 nav {
   flex-grow: 10;
+  margin-bottom: 3px;
   display: inline-block;
 }
 
@@ -118,6 +119,7 @@ pre {
   overflow: auto;
   font-family: 'Cascadia Code';
   font-size: .9em;
+  white-space: pre-wrap;
 }
 
 hr {
