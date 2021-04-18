@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lte IE 9]>
-<html class="ie" lang="en">
-<![endif]-->
-<!--[if gt IE 9]><!-->
 <html lang="en" id="body">
-<!--<![endif]-->
 
 <head>
   <meta charset="UTF-8">
@@ -17,8 +12,8 @@
       display: block;
       margin: 0 1em;
     }
-    .light * {
-      --body-bg: #fff;
+    .light body {
+      background: #fff !important;
     }
   </style>
 </head>
@@ -30,38 +25,38 @@
     <nav>
       <span id="blurb"></span><a href="index.html">Home</a> • <a href="licenses.html">Licenses</a> • <a href="https://github.com/xyr11/simple-html-previewer">GitHub</a>
     </nav>
-    <!--[if !IE]><!-->
     <label id="theme-wrap" class="switch" title="Toggle theme">
       <input type="checkbox" id="theme" onclick="toggle()" checked>
       <span class="slider"><i id="slider-inside"></i></span>
     </label>
-    <!--<![endif]-->
   </header>
   <noscript style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.3);cursor:not-allowed"><div style="padding:35px;width:80%;max-width:480px;height:70%;max-height:240px;margin:auto;margin-top:80px;text-align:center;color:white;background-color:#121212;border:4px solid #ff0;font-size:16px;box-shadow:0 1px 16px #000;overflow:auto;cursor:help"><h2 style="margin: 10px 0 25px 0;">⚠️ Enable Javascript ⚠️</h2><p>If you see this message, it means that your browser currently doesn't allow Javascript code. If you can, please enable it for this page to work, or switch to a Javascript-capable browser.</p></div></noscript>
   <main>
     <div>
-      <p>Current version: <span id="ver"></span></p>
+      <p>Current version: v<span id="ver"></span></p>
       <h2>About</h2>
-      <p>Literally an auto-updating &lt;iframe> only that gets input from a &lt;textarea>, there's not even an autosyntax and autocomplete feature. Why would you even use this? I mean the only neat thing in this is that it's lightweight, fully clientside only, and works in IE >=9</p>
+      <p>literally made up of a &lt;textarea&gt; that outputs stuff in an &lt;iframe&gt;, how can you get more basic than this? oh yeah, you can also resize them, export as html, change themes, add indentation and more, and it also works in Internet Explorer 9 and later!</p>
       <h2>Features</h2>
       <ul>
-        <li>Lightweight</li>
+        <li>Lightweight, only consumes about 150 KB total</li>
         <li>Fully client-side</li>
-        <li>Working in Internet Explorer 9 and later</li>
+        <li>Dark mode</li>
+        <li>Your code will automatically be saved in your browser so that you can visit it again</li>
+        <li>Export your code as an HTML file</li>
+        <li>Fully working in Internet Explorer 9 and later</li>
       </ul>
       <h2>License</h2>
       <p>This project is licensed under <a href="https://github.com/xyr11/simple-html-previewer/blob/main/LICENSE">MIT License</a></p>
+      <h2>Known Issues</h2>
+      <p>In Internet Explorer, <i>window.localStorage</i> doesn't fully work in local/offline versions of this project, and so your preferences (like your themes) may not be saved if you close the page</p>
       <h2>Why tho</h2>
       <p>Why</p>
-      <h2>Link</h2>
-      <p>On the top</p>
       <br><br>
       <p>I didn't code all of these! This project is made up of open-source code that helped improve this thing! <a href="licenses.html">More info can be found in the Licenses page.</a></p>
     </div>
   </main>
   <script src="https://xyr11.github.io/simple-html-previewer/version.js" type="text/javascript"></script>
   <script src="js/indenter.js" type="text/javascript"></script>
-  <script src="js/cssVarsPonyfill.js" type="text/javascript"></script>
   <script src="js/classListPolyfill.js" type="text/javascript"></script>
   <script src="js/matchMediaPolyfill.js" type="text/javascript"></script>
   <script src="js/main.js" type="text/javascript"></script>
