@@ -14,9 +14,7 @@ See it live: <https://xyr11.github.io/simple-html-previewer/>
 - Fully working in Internet Explorer 9 and later
 
 ## Installation
-Download the repo by clicking [here](https://github.com/xyr11/simple-html-previewer/archive/refs/heads/main.zip) or by presing the big green button that says 'Code' and choose 'Download ZIP'
-
-(I'll probably add a release package in the future to make this easier)
+You can download the latest version from the Releases page here: <https://github.com/xyr11/simple-html-previewer/releases>
 
 ## Usage
 Open the `index.html` file or [visit the live version](https://xyr11.github.io/simple-html-previewer/)
